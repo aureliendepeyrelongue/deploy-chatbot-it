@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %} {% block title %} Chatbot {% endblock %} {% block links %}
+<link href="{{ url_for('static', filename='css/chatbot.css') }}" type="text/css" rel="stylesheet" media="screen,projection" /> {% endblock %} {% block pageContent %}
+<h3>Ask your questions</h3>
+<div class="row">
+    <div class="col offset-m3 m6 s12">
+        <div id="app"></div>
+    </div>
+</div>
+
+{% include 'fragments/prevent_departure_chatbot_page_modal.html' %} {% endblock %} {% block scripts %}
+<script src="{{ url_for( 'static', filename='vuejs_dist/chatbot_app/js/chunk-vendors.js' ) }} "></script>
+<script src="{{ url_for( 'static', filename='vuejs_dist/chatbot_app/js/app.js' ) }} "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+<script src="{{ url_for( 'static', filename='js/prevent_departure_chatbot_page.js' ) }} "></script>
+
+{% endblock %}

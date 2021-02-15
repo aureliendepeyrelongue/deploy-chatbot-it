@@ -1,0 +1,125 @@
+#chatbot-app-and-header-wrapper {
+    padding: 0;
+    border-radius: 6px;
+}
+
+#chatbot-app-and-header-wrapper h4 {
+    border-radius: 4px 4px 0 0;
+    background: #2c2c2c;
+    margin: 0;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.user-message {
+    background: #5e35b1;
+    color: #fff;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+
+.message-author {
+    font-weight: 700;
+}
+
+.chatbot-message {
+    background: #ffffff;
+    border: 1px solid rgb(230, 230, 230);
+    color: #444;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+.chatbot-message.end-message a {
+    float: right;
+    margin-left: 5px;
+}
+
+.message-author {
+    font-weight: 700;
+}
+
+#chat-container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#chat-container #message-container {
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 650px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#chat-container .input-container {
+    background: #fff;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* chatbot spinner */
+
+.spinner {
+    margin: 5px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(117, 117, 117);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

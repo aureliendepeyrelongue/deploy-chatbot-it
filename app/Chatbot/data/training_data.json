@@ -1,0 +1,220 @@
+{
+    "intents": [
+        {
+            "tag": "start_conversation",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Hello, I'm Miage bot, I will be your assistant for common IT problems"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "resume_conversation",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Hello, It seems we talk before and our conversation doesn't finish, do you want to load the old conversation <div class='row'><div class='col col-sm-6'><a href='/user/chatbot-page?resum=True' class='btn btn-default'>Yes</a> </div><div class='col col-sm-6'><a href='/user/chatbot-page?resum=False' class='btn btn-default'>No</a></div> </div>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hi, how are you?",
+                "Hi, are you ok today?",
+                "Hi there",
+                "are you fine?",
+                "everything are ok?",
+                "you are fine?",
+                "are you ok?",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking, how i can help you?",
+                "Good to see you again, how I can help you",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "about",
+            "patterns": [
+                "Who are you?",
+                "What are you?",
+                "Who you are?",
+                "Are you human?",
+                "Are you a bot?",
+                "you are human or bot?"
+            ],
+            "responses": [
+                "I.m Miage, your bot assistant",
+                "I'm Miage, an Artificial Intelligent bot"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Waitting",
+            "patterns": [
+                "I will try",
+                "I will try and return to you",
+                "still trying",
+                "try to fix"
+            ],
+            "responses": [
+                "Ok, take the time, and tell me the result",
+                "Take your time, I'm waitting"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "I have a problem",
+                "Can you help me",
+                "I need your help",
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered",
+                "what problems you can solve?"
+            ],
+            "responses": [
+                "I can guide you in plusiers IT and general management problems, Pose your problem clearly, so I can help you",
+                "I'm Offering support for Common IT and management problems, Pose your problem clearly, so I can help you"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Remote_Collaboration",
+            "patterns": [
+                "How to achieve collaborating between teams",
+                "How to enhance the collaborating?",
+                "Give me a solution for collaborating",
+                "any suggest for collaborating?",
+                "products for collaborating",
+                "interacting between team?"
+            ],
+            "responses": [
+                "what about using Slack, did you tried it before, https://slack.com/intl/en-gb/, also for For basic document collaboration you have Google Drive, Another great collaborative tool is the team version of <a href='https://sparkmailapp.com/teams'> Spark </a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tracking_Tasks",
+            "patterns": [
+                "tracking the tasks",
+                "Team productivity and tasks",
+                "follow up the tasks",
+                "keep track of progress on individual tasks"
+            ],
+            "responses": [
+                "You need a project management tools like <ul><li>Status Hero</li><li>Toggle</li></ul>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Staying_Motivated",
+            "patterns": [
+                "motivate the team",
+                "keep team motivated",
+                "motivation"
+            ],
+            "responses": [
+                "What about making video call from time to time"
+            ],
+            "context": [
+                "Execute_Service"
+            ]
+        },
+        {
+            "tag": "VPN",
+            "patterns": [
+                "VPN problem",
+                "I can't connect to VPN",
+                "VPN connection is broken",
+                "VPN is disconnected",
+                "Non-responding VPN server"
+            ],
+            "responses": [
+                "try the following: <ul><li>Restart your VPN software</li><li>Try the OpenVPN protocol</li><li>Check the firewall</li><li>Clear your device from the previous VPN software</li></ul>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Reset_Password",
+            "patterns": [
+                "I want reset my password",
+                "I forgot my password",
+                "password reset please"
+            ],
+            "responses": [
+                "Please confirm your email below:"
+            ],
+            "context": [
+                "Execute_Reset_Password"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>{% block title %}{% endblock %} - Chatbot IT</title>
+    {% include 'fragments/links.html' %} {% block links %}{% endblock %}
+</head>
+
+<body>
+    {% include 'fragments/navbar.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main-content" class="z-depth-0">
+                    {% block pageContent %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'fragments/footer.html' %} {% include 'fragments/post_new_issue_modal.html' %}{% include 'fragments/login_modal.html' %}
+    <!--  Scripts-->
+    {% include 'fragments/scripts.html' %}
+    <script src="{{ url_for( 'static', filename='vuejs_dist/new_solution_app/js/chunk-vendors.js' ) }} "></script>
+    <script src="{{ url_for( 'static', filename='vuejs_dist/new_solution_app/js/app.js' ) }} "></script>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

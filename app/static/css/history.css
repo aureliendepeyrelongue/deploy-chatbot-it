@@ -1,0 +1,57 @@
+#history-chat-panel .collection-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-chat-panel .collection-header h4 {
+    margin: auto 0 auto 0;
+}
+
+#copy-ref-button {
+    margin: auto 0 auto 0;
+}
+
+#history-chat-container {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#history-chat-container>div {
+    height: 698px;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+#history-chat-container .card {
+    margin-top: 40px;
+    opacity: 0.9;
+}
+
+#history-chat-container .card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#history-links-container>div {
+    height: 778px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#history-links-container a {
+    color: #333;
+}
+
+#history-links-container a.active {
+    color: white;
+}
+
+.collection-item.custom-grey {
+    background: #f3f3f3;
+}
+
+#history-date {
+    font-size: 1em;
+}

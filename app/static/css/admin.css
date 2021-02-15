@@ -1,0 +1,11 @@
+td.username-td {
+    width: 20%;
+}
+
+td.approve-td {
+    width: 15%;
+}
+
+#admin-wrapper {
+    margin: 20px;
+}

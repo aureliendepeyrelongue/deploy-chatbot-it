@@ -1,0 +1,47 @@
+body {
+    background: url("../img/vector.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.container h4 {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+nav .brand-logo {
+    display: flex;
+}
+
+nav .brand-logo img {
+    filter: invert(93%) sepia(93%) saturate(0%) hue-rotate(242deg) brightness(105%) contrast(103%);
+    width: 30px;
+    margin-right: 15px;
+}
+
+#main-content {
+    background: #fff;
+    opacity: 0.9;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 30px;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+ul.collection li.collection-item span.title {
+    font-weight: bold;
+}
+
+select {
+    display: block;
+}
