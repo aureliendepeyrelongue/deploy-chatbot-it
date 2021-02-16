@@ -21,7 +21,7 @@ docs/_build/
 __pycache__
 /__pycache__
 
-app/data/chatbotDB.sqlite3
+./app/data/chatbotDB.sqlite3
 
 # Coverage reports
 htmlcov/

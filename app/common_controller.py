@@ -41,9 +41,10 @@ def login():
 
 @app.route('/common/logout',methods = ['POST'])
 def logout():
-    session.pop('authenticated')
-    session.pop('user_id')
-    session.pop('user_first_name')
+    if session.get('authenticated'):
+        session.pop('authenticated')
+        session.pop('user_id')
+        session.pop('user_first_name')
     if session.get('is_admin'):
         session.pop('is_admin')
 
