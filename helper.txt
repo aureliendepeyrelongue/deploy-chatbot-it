@@ -3,3 +3,5 @@ solution for deployment :
 https://stackoverflow.com/questions/56028694/heroku-deployment-error-no-matching-distribution-found-for-en-core-web-sm
 
 python -m spacy download en && python app.py
+
+changement
