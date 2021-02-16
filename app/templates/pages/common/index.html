@@ -44,10 +44,10 @@
                 </h5>
             </div>
             <div class="row center">
-                {% if session.get("authenticated")%}
+                {% if session.get("authenticated")%} {% if not session.get('is_admin')%}
                 <a href="/user/chatbot-page" id="download-button " class="btn-large waves-effect waves-light deep-purple darken-1">Any question ?</a
           >
-          {% else %}
+          {%endif%} {% else %}
           <a
             href="#login-modal"
             class="btn-large modal-trigger waves-effect waves-light deep-purple darken-1"
