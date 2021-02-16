@@ -3,7 +3,6 @@ from datetime import timedelta
 from flask import session
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-from flask_cors import CORS
 
 db=SQLAlchemy()
 bcrypt = Bcrypt()
@@ -17,8 +16,6 @@ def create_app():
     db.init_app(flask_app)
     #create the Bcrypt insyance 
     bcrypt.init_app(flask_app)
-
-    CORS(flask_app)
 
     return flask_app
 

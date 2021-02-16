@@ -1,13 +1,11 @@
 
 from flask import render_template, request
-from flask_cors import cross_origin
 from app import app, service
 from flask import session
 from flask import jsonify
 #from .chatbot_service import ChatbotManager
 
 @app.route("/user/new-solution",methods=['POST'])
-@cross_origin()
 def post_new_solution():
     if request.method == 'POST':
         if request.headers['Content-Type'] == 'application/json':
